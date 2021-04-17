@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="scroll-behavior: smooth" lang=" en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="tailwind.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 <header>
-	<div class="container mx-auto ">
-		<div class="lg:flex block lg:text-xl text-4xl justify-between py-10 text-gray-800 font-noto ">
-			<p class="text-3xl">Kokuga</p>
-			<ul class="lg:flex block">
-				<li class=" lg:mt-0 mt-12">A propos de moi</li>
-				<li class="lg:ml-8 ml-0 lg:mt-0 mt-8">Mes compétences</li>
-				<li class="lg:ml-8 ml-0 lg:mt-0 mt-8">Mes réalisations</li>
-				<li class="lg:ml-8 ml-0 lg:mt-0 mt-8">Me contacter</li>
+	<div class="  container mx-auto">
+		<div class="px-8 xl:flex block xl:text-xl text-2xl justify-between lg:px-0 lg:py-10 text-gray-800 font-noto ">
+			<p class="text-3xl xl:text-xl">Kokuga</p>
+			<ul class="xl:flex block">
+				<a href="#aboutme">
+					<li class="xl:mt-0 mt-12 hover:text-purple-800 transform hover:scale-105 duration-200">A propos de moi</li>
+				</a>
+				<a href="#skills">
+					<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Mes compétences</li>
+				</a>
+				<a href="#works">
+					<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Mes réalisations</li>
+				</a>
+				<a href="#contact">
+					<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Me contacter</li>
+				</a>
 			</ul>
-			<div class="flex lg:mt-0 mt-8">
-				<a>
+			<div class="flex xl:mt-0 mt-8">
+				<a href="https://twitter.com/Kokuga_Japan">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-						 stroke-width="2" class="lg:w-8 w-12 text-gray-700"
+						 stroke-width="2"
+						 class=" transform hover:scale-105 duration-200 hover:text-purple-800 xl:w-8 lg:w-12 w-6 text-gray-700"
 						 viewBox="0 0 24 24">
 						<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 					20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
 					</svg>
 				</a>
-				<a class="ml-8">
+				<a href="https://www.linkedin.com/in/damien-mizzi-b92b16201/" class="ml-8">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-						 stroke-width="2" class="lg:w-8 w-12 text-gray-700"
+						 stroke-width="2"
+						 class=" transform hover:scale-105 duration-200 hover:text-purple-800 xl:w-8 lg:w-12 w-6 text-gray-700"
 						 viewBox="0 0 24 24">
 						<path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
 						<circle cx="4" cy="4" r="2"/>
@@ -39,16 +52,21 @@
 		</div>
 	</div>
 </header>
-<section>
-	<div class="container mx-auto">
+<section data-aos="fade-up" data-aos-duration="1000">
+	<div class="lg:mt-0 mt-4 container mx-auto">
 		<div class="bg-blue-50 rounded-lg ">
-			<div class="p-16  lg:flex block">
-				<div class="lg:w-1/2 w-full">
-					<h1 class="w-10/12 font-Slab font-semibold leading-snug text-7xl">Damien Mizzi <span class="text-6xl">Développeur <span
-							class="text-purple-700">FullStack</span>
+			<div class="xl:p-16 p-8  xl:flex block">
+				<div class="2xl:w-1/2 w-full">
+					<h1 class="2xl:w-8/12 xl:w-10/12 xl:text-left lg:text-center lg::w-full font-Slab font-semibold leading-snug text-5xl">Damien
+						Mizzi
+						<span
+								class="text-4xl">Développeur
+						<span
+								class="text-purple-700">FullStack</span>
 					</span>
 					</h1>
-					<h2 class="w-10/12 font-noto font-light lg:text-2xl text-4xl mt-8">Ayant eu un BTS services informatiques aux organisations,
+					<h2 class="2xl:w-10/12 font-noto font-light xl:text-2xl text-xl mt-8">Ayant eu un BTS services informatiques aux
+						organisations,
 						je suis
 						actuellement
 						en formation
@@ -56,7 +74,7 @@
 						web et web
 						mobile afin d'approfondir mes compétences.</h2>
 				</div>
-				<div class="lg:w-1/2 w-full lg:mt-0 mt-4">
+				<div class="2xl:w-1/2 w-full 2xl:mt-0 mt-4">
 					<svg class="w-full" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 1144 617.32">
 						<path fill="#6c63ff"
 							  d="M1144 396.23a181.92 181.92 0 01-6.85 49.6 180.06 180.06 0 01-19.27 44.28c0 50.1-33.82 93.4-82.91 114a167.3 167.3 0 01-64.73 12.8H217.17c-40.25 0-77.55-10.86-108.14-29.36a185.76 185.76 0 01-24.83-17.89c-34-29.22-55.08-69.6-55.08-114.2A180.5 180.5 0 010 356.74c0-73.36 43.39-136.44 105.55-164.29a174.52 174.52 0 0125.51-9.12q4.63-1.26 9.36-2.26a175.39 175.39 0 0125.51-3.5q4.65-.29 9.35-.33H177c3.46 0 6.89.12 10.3.32l1.12-1.9q2.06-3.44 4.22-6.81 3.9-6.14 8.18-12.1 4.48-6.29 9.35-12.38l.83-1q2.76-3.44 5.64-6.8 9-10.49 19-20.35C307.75 45.54 420.72.04 547.72.04c98.82 0 189.15 27.55 258.34 73.07A174.18 174.18 0 01892 50.52c97.74 0 177 80.37 177 179.51a184.9 184.9 0 01-1 18.78 180 180 0 0176 147.42z"
@@ -238,28 +256,37 @@
 		</div>
 	</div>
 </section>
-<section>
+<section id="skills">
 	<div class="container mx-auto mt-12">
-		<h2 class="text-center lg:text-5xl text-6xl font-Slab text-gray-800">Mes compétences</h2>
-		<div class="mt-10 border border-gray-400 h-px w-full"></div>
-		<div class="mt-10 flex flex-wrap justify-between">
-			<img class="" src="./img/htmlcss.png" alt="htmlcss">
-			<img class="" src="./img/javascript.png" alt="javascript">
-			<img class="" src="./img/php.png" alt="php">
-			<img class="" src="./img/mysql.png" alt="mysql">
-			<img class="" src="./img/git.png" alt="git">
-			<img class="" src="./img/laravel.png" alt="laravel">
-			<img class="" src="./img/tailwindcss.png" alt="tailwindcss">
-			<img class="" src="./img/nuxtjs.png" alt="nuxtjs">
+		<div class="xl:p-0 p-8">
+			<h2 class="text-center xl:text-5xl text-4xl font-Slab text-gray-800">Mes compétences</h2>
+			<div class="mt-10 border border-gray-400 h-px w-full"></div>
+			<div class="mt-10 flex flex-wrap justify-between">
+				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/htmlcss.png"
+				alt="htmlcss">
+				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/javascript.png"
+				alt="javascript">
+				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/php.png" alt="php">
+				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/mysql.png"
+				alt="mysql">
+				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/git.png"
+					 alt="git">
+				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/laravel.png"
+				alt="laravel">
+				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/tailwindcss.png"
+				alt="tailwindcss">
+				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/nuxtjs.png"
+				alt="nuxtjs">
+			</div>
+			<div class="mt-10 border border-gray-400 h-px w-full"></div>
 		</div>
-		<div class="mt-10 border border-gray-400 h-px w-full"></div>
 	</div>
 </section>
 
-<section>
+<section id="aboutme">
 	<div class="container mx-auto mt-12">
-		<div class="bg-gray-900 lg:flex block py-16 px-32">
-			<div class="lg:w-1/2  w-full">
+		<div class="bg-gray-900 2xl:flex block py-16 lg:px-32 px-8">
+			<div data-aos="fade-right" data-aos-duration="2000" class="2xl:w-1/2   w-full">
 				<svg class="mt-16 w-11/12" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 523 336">
 					<circle cx="766.35" cy="561.776" r="43.067" fill="#2f2e41" transform="rotate(-45 256.696 829.381)"/>
 					<circle cx="762.929" cy="551.366" r="14.719" fill="#fff" transform="rotate(-12.481 -695.732 1958.117)"/>
@@ -309,23 +336,23 @@
 					<circle cx="497.22" cy="216.17" r="6.467" fill="#f2f2f2"/>
 				</svg>
 			</div>
-			<div class="lg:w-1/2 w-full">
-				<h3 class="text-gray-500 lg:mt-0 mt-4 lg:text-2xl text-4xl">Qui est Damien Mizzi</h3>
+			<div data-aos="fade-left" data-aos-duration="2000" class="2xl:w-1/2 w-full">
+				<h3 class="text-gray-500 2xl:mt-0 mt-4 2xl:text-2xl text-xl">Qui est Damien Mizzi</h3>
 				<div class="mt-4 flex items-center">
 					<div class="bg-purple-800 p-3 rounded-full">
 						<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-							 stroke-width="2" class="text-gray-100  w-10 " viewBox="0 0 24 24">
+							 stroke-width="2" class="text-gray-100  lg:w-10 w-8 " viewBox="0 0 24 24">
 							<path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
 						</svg>
 					</div>
-					<h1 class="ml-8 lg:text-4xl text-4xl text-gray-100 font-Slab">Parlons un peu de moi</h1>
+					<h1 class="ml-8 2xl:text-4xl text-2xl text-gray-100 font-Slab">Parlons un peu de moi</h1>
 				</div>
-				<p class="mt-8 text-gray-100 font-noto font-light lg:text-2xl text-3xl  leading-10">Venant d'un BAC STMG, j'ai integré un BTS
+				<p class="mt-8 text-gray-100 font-noto font-light 2xl:text-2xl text-xl  leading-10">Venant d'un BAC STMG, j'ai integré un BTS
 					services
 					informatiques aux organisations car l'informatique m'a toujours intéressé. Durant ces deux années de BTS, j'ai accomplis un
 					stage de 2 mois qui m'a permis de developper mes compétences.</p>
 
-				<p class="mt-8 text-gray-100 font-noto font-light lg:text-2xl text-3xl leading-10"> Ce stage m'a fait connaitre de nouveaux
+				<p class="mt-8 text-gray-100 font-noto font-light 2xl:text-2xl text-xl leading-10"> Ce stage m'a fait connaitre de nouveaux
 					langages, de
 					nouvelles
 					expériences ainsi une vision de la vie d'un développeur en entreprise. Je suis autodidacte, rigoureux ainsi que patient.</p>
@@ -334,19 +361,19 @@
 	</div>
 </section>
 
-<section>
-	<div class="mt-12 container mx-auto">
-		<h2 class="text-center lg:text-5xl text-6xl font-Slab text-gray-800">Mes réalisations</h2>
+<section id="works">
+	<div class="mt-12 container mx-auto xl:p-0 p-8">
+		<h2 class="text-center xl:text-5xl text-4xl font-Slab text-gray-800">Mes réalisations</h2>
 		<div class="mt-10 border border-gray-400 h-px w-full"></div>
 	</div>
-	<div class="mt-10 bg-gray-100 ">
+	<div class="mt-10 bg-gray-100 xl:p-0 p-8">
 		<div class="py-10 container mx-auto">
-			<div class="lg:flex block">
-				<div class="bg-purple-500 rounded-lg lg:w-1/2 w-full p-10">
+			<div class="2xl:flex block">
+				<div data-aos="fade-up" data-aos-duration="1000" class="bg-purple-500 rounded-lg 2xl:w-1/2 w-full lg:p-10 p-4">
 					<img class="" src="./img/wetric.png" alt="wetric">
 				</div>
-				<div class="lg:w-1/2 w-full lg:pl-10 pl-0">
-					<p class="text-gray-900 inline-block align-middle font-noto font-light lg:text-2xl text-3xl mt-8">Site que j'ai réalisé en
+				<div data-aos="fade-up" data-aos-duration="2000" class="2xl:w-1/2 w-full 2xl:pl-10 pl-0">
+					<p class="text-gray-900 inline-block align-middle font-noto font-light 2xl:text-2xl text-xl mt-8">Site que j'ai réalisé en
 						stage. Le
 						back-end
 						est
@@ -357,17 +384,17 @@
 						lorsque l'on se connecte. Le serveur de base de donnée est PostgreSQL. Tous les services tournent sur Docker.
 						Le but du site est de créer un endroit ou les agences puissent mettre les propriètés en ligne</p>
 					<a href="https://wetric.gedeon.im"
-					   class="inline-block lg:text-base text-2xl mt-10 rounded-lg align-middle font-noto font-semibold text-gray-100 bg-purple-800 px-4 py-3">Voir
+					   class="transform hover:scale-105 hover:bg-purple-900 duration-200 inline-block 2xl:text-base text-md mt-10 rounded-2xl align-middle font-noto font-semibold text-gray-100 bg-purple-800 px-4 py-3">Voir
 						le site</a>
 				</div>
 			</div>
 
-			<div class="lg:flex block mt-10">
-				<div class="lg:hidden block mt-12 bg-purple-500 rounded-lg lg:w-1/2 w-full p-10">
+			<div data-aos="fade-up" data-aos-duration="1000" class="2xl:flex block mt-10">
+				<div class="2xl:hidden block mt-12 bg-purple-500 rounded-lg 2xl:w-1/2 w-full lg:p-10 p-4">
 					<img class="" src="./img/cconseil.png" alt="cconseil">
 				</div>
-				<div class="lg:w-1/2 w-full pr-10">
-					<p class="text-gray-900 inline-block align-middle font-noto font-light lg:text-2xl text-3xl mt-8">Site réalisé pour un
+				<div data-aos="fade-up" data-aos-duration="2000" class="2xl:w-1/2 w-full pr-10">
+					<p class="text-gray-900 inline-block align-middle font-noto font-light 2xl:text-2xl text-xl mt-8">Site réalisé pour un
 						client. J'ai
 						utilisé Laravel pour le faire. Le design est réalisé par TailwindCSS. La disposition ainsi que les couleurs ont été
 						choisi par le client.
@@ -376,10 +403,10 @@
 						rendez-vous via un
 						formulaire de contact. </p>
 					<a href="https://cconseils.com"
-					   class="inline-block lg:text-base text-2xl mt-10 rounded-lg align-middle font-noto font-semibold text-gray-100 bg-purple-800 px-4 py-3">Voir
+					   class="transform hover:scale-105 hover:bg-purple-900 duration-200 inline-block 2xl:text-base text-md mt-10 rounded-lg align-middle font-noto font-semibold text-gray-100 bg-purple-800 px-4 py-3">Voir
 						le site</a>
 				</div>
-				<div class="lg:block hidden bg-purple-500 rounded-lg lg:w-1/2 w-full p-10">
+				<div class="2xl:block hidden bg-purple-500 rounded-lg 2xl:w-1/2 w-full p-10">
 					<img class="" src="./img/cconseil.png" alt="cconseil">
 				</div>
 			</div>
@@ -387,43 +414,45 @@
 	</div>
 </section>
 
-<section>
+<section data-aos="fade-top" data-aos-duration="2000" id="contact">
 	<div class="mt-10 container mx-auto bg-gray-900">
-		<div class="lg:px-56 px-28 py-16">
-			<div class="lg:flex block justify-between">
-				<div class="lg:w-1/2 w-full">
+		<div class="2xl:px-56 lg:px-28 px-8 py-16">
+			<div class="xl:flex block justify-between">
+				<div class="2xl:w-1/2 w-full">
 					<div class=" ">
-						<h3 class="text-gray-100 font-noto font-semibold lg:text-3xl text-4xl">Damien Mizzi</h3>
-						<h4 class="mt-2 text-gray-400 font-noto font-light lg:text-xl text-2xl">Développeur FullStack</h4>
+						<h3 class="text-gray-100 font-noto font-semibold 2xl:text-3xl text-2xl">Damien Mizzi</h3>
+						<h4 class="mt-2 text-gray-400 font-noto font-light 2xl:text-xl text-lg">Développeur FullStack</h4>
 					</div>
 
-					<div class="lg:mt-20 mt-8 lg:mb-0 mb-10 ">
-						<h4 class="text-gray-400 font-noto font-light lg:text-xl text-2xl">Me contacter :</h4>
-						<h3 class="mt-2 text-gray-100 font-noto font-semibold lg:text-2xl text-3xl">mizzi.damien@gmail.com</h3>
+					<div class="2xl:mt-20 mt-8 2xl:mb-0 mb-10 ">
+						<h4 class="text-gray-400 font-noto font-light 2xl:text-xl text-lg">Me contacter :</h4>
+						<h3 class="mt-2 text-gray-100 font-noto font-semibold 2xl:text-2xl text-xl">mizzi.damien@gmail.com</h3>
 					</div>
 				</div>
 
 
-				<div class="lg:w-1/2 w-full">
-					<h2 class="text-gray-100 font-noto font-semibold text-5xl">Parlons !</h2>
-					<p class="mt-5 leading-10 text-gray-400 font-noto font-light lg:text-2xl text-3xl">Je suis toujours présent si vous voulez
+				<div class="2xl:w-1/2 w-full">
+					<h2 class="text-gray-100 font-noto font-semibold lg:text-5xl text-2xl">Parlons !</h2>
+					<p class="mt-5 leading-10 text-gray-400 font-noto font-light 2xl:text-2xl text-xl">Je suis toujours présent si vous voulez
 						parler d'un
 						probleme sur
 						votre
 						projet, ou juste pour discuter ! </p>
 					<div class="flex mt-8">
-						<a>
+						<a href="https://twitter.com/Kokuga_Japan">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
 								 stroke-linejoin="round"
-								 stroke-width="2" class="lg:w-8 w-12 text-gray-100"
+								 stroke-width="2"
+								 class=" transform hover:scale-105 duration-200 hover:text-gray-200 xl:w-8 lg:w-12 w-6 text-gray-100"
 								 viewBox="0 0 24 24">
 								<path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 					20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
 							</svg>
 						</a>
-						<a class="ml-8">
+						<a href="https://www.linkedin.com/in/damien-mizzi-b92b16201/" class="ml-8">
 							<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
 								 stroke-linejoin="round"
-								 stroke-width="2" class="lg:w-8 w-12 text-gray-100"
+								 stroke-width="2"
+								 class=" transform hover:scale-105 duration-200 hover:text-gray-200 xl:w-8 lg:w-12 w-6 text-gray-100"
 								 viewBox="0 0 24 24">
 								<path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
 								<circle cx="4" cy="4" r="2"/>
@@ -433,14 +462,22 @@
 				</div>
 			</div>
 			<div class="my-16 border border-gray-700 h-px w-full"></div>
-			<div class="lg:flex block lg:text-xl text-3xl justify-between font-noto">
-				<ul class="flex flex-wrap text-gray-100 ">
-					<li class="">A propos de moi</li>
-					<li class="lg:ml-8 ml-5">Mes compétences</li>
-					<li class="lg:ml-8 lg:mt-0 mt-4 ml-5">Mes réalisations</li>
-					<li class="lg:ml-8 lg:mt-0 mt-4 ml-5">Me contacter</li>
+			<div class="lg:flex block lg:text-xl  text-lg justify-between font-noto">
+				<ul class="flex flex-wrap md:justify-between text-gray-100 ">
+					<a href="#aboutme">
+						<li class="transform hover:scale-105 duration-200 hover:text-gray-200 ">A propos de moi</li>
+					</a>
+					<a href="#skills">
+						<li class="transform hover:scale-105 duration-200 hover:text-gray-200 lg:ml-8 ml-5">Mes compétences</li>
+					</a>
+					<a href="#works">
+						<li class="transform hover:scale-105 duration-200 hover:text-gray-200 lg:ml-8 lg:mt-0 mt-4 ml-0">Mes réalisations</li>
+					</a>
+					<a href="#contact">
+						<li class="transform hover:scale-105 duration-200 hover:text-gray-200 lg:ml-8 lg:mt-0 mt-4 ml-6">Me contacter</li>
+					</a>
 				</ul>
-				<p class="lg:mt-0 mt-8 text-center text-gray-700"><span class="">&#169;</span> 2021 Kokuga</p>
+				<p class="2xl:mt-0 mt-8 text-center text-gray-700"><span class="">&#169;</span> 2021 Kokuga</p>
 			</div>
 		</div>
 	</div>
@@ -448,3 +485,6 @@
 
 </body>
 </html>
+<script>
+    AOS.init();
+</script>
