@@ -13,24 +13,34 @@
 </head>
 <body>
 <header>
-	<div class="  container mx-auto">
-		<div class="px-8 xl:flex block xl:text-xl text-2xl justify-between lg:px-0 lg:py-10 text-gray-800 font-noto ">
-			<p class="text-3xl xl:text-xl">Kokuga</p>
-			<ul class="xl:flex block">
-				<a href="#aboutme">
-					<li class="xl:mt-0 mt-12 hover:text-purple-800 transform hover:scale-105 duration-200">A propos de moi</li>
-				</a>
-				<a href="#skills">
-					<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Mes compétences</li>
-				</a>
-				<a href="#works">
-					<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Mes réalisations</li>
-				</a>
-				<a href="#contact">
-					<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Me contacter</li>
-				</a>
-			</ul>
-			<div class="flex xl:mt-0 mt-8">
+	<div class="container mx-auto">
+
+		<div class=" px-8 xl:flex block xl:text-xl text-2xl justify-between lg:px-0 lg:py-10 text-gray-800 font-noto ">
+			<div class="flex xl:mt-0 xl:mb-0 mb-5 mt-5 justify-between">
+				<p class=" text-3xl xl:text-xl">Kokuga</p>
+				<svg onclick="toggle()" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+					 stroke-linejoin="round"
+					 stroke-width="2" class="items-center xl:w-8 xl:hidden block lg:w-12 w-6 text-gray-700" viewBox="0 0 24 24">
+					<path d="M3 12h18M3 6h18M3 18h18"/>
+				</svg>
+			</div>
+			<div class="xl:flex hidden" id="textmenu">
+				<ul class="xl:flex block">
+					<a href="#aboutme">
+						<li class="xl:mt-0 mt-12 hover:text-purple-800 transform hover:scale-105 duration-200">A propos de moi</li>
+					</a>
+					<a href="#skills">
+						<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Mes compétences</li>
+					</a>
+					<a href="#works">
+						<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Mes réalisations</li>
+					</a>
+					<a href="#contact">
+						<li class="xl:ml-8 ml-0 xl:mt-0 mt-8 hover:text-purple-800 transform hover:scale-105 duration-200">Me contacter</li>
+					</a>
+				</ul>
+			</div>
+			<div id="iconmenu" class="xl:flex hidden xl:mt-0 mt-8">
 				<a href="https://twitter.com/Kokuga_Japan">
 					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
 						 stroke-width="2"
@@ -53,7 +63,7 @@
 	</div>
 </header>
 <section data-aos="fade-up" data-aos-duration="1000">
-	<div class="lg:mt-0 mt-4 container mx-auto">
+	<div class="lg:mt-0 container mx-auto">
 		<div class="bg-blue-50 rounded-lg ">
 			<div class="xl:p-16 p-8  xl:flex block">
 				<div class="2xl:w-1/2 w-full">
@@ -263,20 +273,20 @@
 			<div class="mt-10 border border-gray-400 h-px w-full"></div>
 			<div class="mt-10 flex flex-wrap justify-between">
 				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/htmlcss.png"
-				alt="htmlcss">
+					 alt="htmlcss">
 				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/javascript.png"
-				alt="javascript">
+					 alt="javascript">
 				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/php.png" alt="php">
 				<img data-aos="fade-left" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/mysql.png"
-				alt="mysql">
+					 alt="mysql">
 				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/git.png"
 					 alt="git">
 				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/laravel.png"
-				alt="laravel">
+					 alt="laravel">
 				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/tailwindcss.png"
-				alt="tailwindcss">
+					 alt="tailwindcss">
 				<img data-aos="fade-right" data-aos-duration="2000" class=" transform hover:scale-125 duration-200" src="./img/nuxtjs.png"
-				alt="nuxtjs">
+					 alt="nuxtjs">
 			</div>
 			<div class="mt-10 border border-gray-400 h-px w-full"></div>
 		</div>
@@ -474,7 +484,7 @@
 						<li class="transform hover:scale-105 duration-200 hover:text-gray-200 lg:ml-8 lg:mt-0 mt-4 ml-0">Mes réalisations</li>
 					</a>
 					<a href="#contact">
-						<li class="transform hover:scale-105 duration-200 hover:text-gray-200 lg:ml-8 lg:mt-0 mt-4 ml-6">Me contacter</li>
+						<li class="transform hover:scale-105 duration-200 hover:text-gray-200 lg:ml-8 lg:mt-0 mt-4 ml-5">Me contacter</li>
 					</a>
 				</ul>
 				<p class="2xl:mt-0 mt-8 text-center text-gray-700"><span class="">&#169;</span> 2021 Kokuga</p>
@@ -484,7 +494,20 @@
 </section>
 
 </body>
-</html>
 <script>
     AOS.init();
+
+    function toggle() {
+        let textmenu = document.querySelector('#textmenu');
+        let iconmenu = document.querySelector('#iconmenu')
+
+        if (textmenu.style.display === 'none' && iconmenu.style.display === 'none') {
+            textmenu.style.display = 'flex';
+            iconmenu.style.display = 'flex'
+        } else {
+            textmenu.style.display = 'none'
+            iconmenu.style.display = 'none'
+        }
+    }
 </script>
+</html>
